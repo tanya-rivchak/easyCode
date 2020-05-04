@@ -1,0 +1,18 @@
+#usersList{
+    margin-top: 30px
+}
+#spinner{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.create-user-form{
+    margin: 30px 0;
+}
+.create-user-form>*:not(:last-child){
+    margin-bottom: 15px;
+}
+h1{
+    margin-top: 30px
+}
