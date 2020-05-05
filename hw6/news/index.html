@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>News App</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-uppercase font-weight-bold">News</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container main-container">
+		<div class="row">
+			<div class="col-12 content">
+				<main class="main">
+					<form name='searchForm' class="flex-fill">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<input type="search" name="search" id="searchInput" placeholder="Search..." class="form-control flex-fill form-control-sm">
+							</div>
+							<div class="col-12 col-md-2">
+								<select name="country" id="countrySelect" class="form-control form-control-sm">
+									<option value="ua">Ukrain</option>
+									<option value="kr">South Korea</option>
+									<option value="us">United States</option>
+									<option value="au">Australia</option>
+									<option value="gr">Greece</option>
+								</select>
+							</div>
+							<div class="col-12 col-md-2">
+								<select name="category" id="categorySelect" class="form-control form-control-sm">
+									<option value="technology" selected>Technology</option>
+									<option value="business">Business</option>
+									<option value="entertainment">Entertainment</option>
+									<option value="general">General</option>
+									<option value="health">Health</option>
+									<option value="science">Science</option>
+									<option value="sports">Sports</option>
+								</select>
+							</div>
+							<div class="col-6 col-md-2">
+								<button type="submit" class="btn btn-primary w-100 search-btn">Search</button>
+							</div>	
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-6 col-md-4 m-auto">
+							<div class="progress" id='progressBar'>
+								<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+							</div>
+						</div>
+					</div>
+					<section id='news-list' class="row news-list">
+					</section>
+				</main>
+				<footer class="footer"><a href="https://newsapi.org/" target="_blanc">News API</a></footer>
+			</div>
+		</div>
+	</div>
+	<script src='app.js'></script>
+</body>
+</html>
